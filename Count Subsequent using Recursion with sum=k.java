@@ -16,10 +16,10 @@ public class B {
 		int sum = 4;
 		ArrayList<Integer> ds = new ArrayList<>();
 
-		System.out.println(subset(0, ds, array, n, 0, sum, 0));
+		System.out.println(subset(0, array, n, 0, sum, 0));
 	}
 
-	public static int subset(int index, ArrayList<Integer> ds, ArrayList<Integer> array, int n, int psum, int sum, int count) {
+	public static int subset(int index, ArrayList<Integer> array, int n, int psum, int sum, int count) {
 		if (index == n) {
 			if (sum == psum) {
 				return 1;
@@ -27,12 +27,10 @@ public class B {
 			return 0;
 		}
 		//take
-		ds.add(array.get(index));
 		psum += array.get(index);
-		int count1 = subset(index + 1, ds, array, n, psum, sum, count);
-		ds.remove(ds.size() - 1);
+		int count1 = subset(index + 1, array, n, psum, sum, count);
 		psum -= array.get(index);
-		int count2 = subset(index + 1, ds, array, n, psum, sum, count);
+		int count2 = subset(index + 1, array, n, psum, sum, count);
 		return count2 + count1;
 	}
 }

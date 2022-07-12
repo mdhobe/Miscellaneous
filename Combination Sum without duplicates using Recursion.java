@@ -13,16 +13,22 @@ public class B {
 		int n = sc.nextInt();
 		ArrayList<Integer> array = new ArrayList<>();
 		for (int i = 0; i < n; i++) array.add(sc.nextInt());
-		int target = 8;
-		ArrayList<Integer> ds = new ArrayList<>();
+		int target = 4;
 		Collections.sort(array);
 
-		combination(0, ds, array, target, n);
+		System.out.println(combinationList(array, target, n));
 	}
 
-	public static void combination(int index, ArrayList<Integer> ds, ArrayList<Integer> array, int target, int n) {
+	public static ArrayList<ArrayList<Integer>> combinationList (ArrayList<Integer> array, int target, int n) {
+		ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
+		ArrayList<Integer> ds = new ArrayList<>();
+		combination(0, ds, array, target, n, ans);
+		return ans;
+	}
+
+	public static void combination(int index, ArrayList<Integer> ds, ArrayList<Integer> array, int target, int n,  ArrayList<ArrayList<Integer>> ans) {
 		if (target == 0) {
-			System.out.println(ds);
+			ans.add(new ArrayList<>(ds));
 			return;
 		}
 
@@ -33,7 +39,7 @@ public class B {
 			if (array.get(i) > target) break;
 
 			ds.add(array.get(i));
-			combination(i + 1, ds, array, target - array.get(i), n);
+			combination(i + 1, ds, array, target - array.get(i), n, ans);
 			ds.remove(ds.size() - 1);
 		}
 

@@ -28,7 +28,6 @@ public class B {
 		} else if (index == n) {
 			return;
 		}
-
 		ds.add(array.get(index));
 		combination(index, ds, array, sum - array.get(index), n);
 		ds.remove(ds.size() - 1);

@@ -18,3 +18,5 @@ Recursion :-
   14. Subset Sum using Recursion
   15. Sudoko using Recursion
   16. Subset Without Duplicate Using Recursion
+  17. K-th Permutation Sequence
+  18. K-th Permutation Sequence (Brut-Force)

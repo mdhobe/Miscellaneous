@@ -20,3 +20,10 @@ Recursion :-
   16. Subset Without Duplicate Using Recursion
   17. K-th Permutation Sequence
   18. K-th Permutation Sequence (Brut-Force)
+
+Sorting :-
+  1. Merge Sort Using Recursion
+  2. Quick Sort Using Recusion
+  
+Questions :-
+  1. Search in a 2D Martix (Binary Search)

@@ -27,3 +27,4 @@ Sorting :-
   
 Questions :-
   1. Search in a 2D Martix (Binary Search)
+  2. Largest Rectangle in Histogram

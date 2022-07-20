@@ -28,3 +28,4 @@ Sorting :-
 Questions :-
   1. Search in a 2D Martix (Binary Search)
   2. Largest Rectangle in Histogram (Brut-Force, Optimum 1, Optimum  2)
+  3. Next Greater Element

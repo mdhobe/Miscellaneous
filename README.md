@@ -29,3 +29,11 @@ Questions :-
   1. Search in a 2D Martix (Binary Search)
   2. Largest Rectangle in Histogram (Brut-Force, Optimum 1, Optimum  2)
   3. Next Greater Element
+  4. Phone Combination
+  5. Gap Method - Merge two Sorted Arrays Without Extra Space
+  6. Linked List cycle method - Find the duplicate number
+  7. Maximum Subarray(Kadane’s Algorithm)
+  8. Merge Intervals
+  9. Next Permutation
+  10. Pascal Triangle
+  11. Rotate Image (Transpose)

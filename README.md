@@ -77,5 +77,5 @@ Questions :-
   12. Remove Linked List Elements
   13. Copy List with Random Pointer
   
-Greedy Algo :-
+Greedy Algo (Problems which either need minimum or maximum results from the set of feasible solutions to get only one optimal solution follows greedy approch ) :-
   1. N meetings in one room

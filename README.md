@@ -61,7 +61,6 @@ Questions :-
   20. Trapping Rain Water
   21. Remove Duplicates in-place from Sorted Array
   22. Count Maximum Consecutive One’s in the array
-  23. 
 
  Linked List :-
   1. Middle of the Linked List

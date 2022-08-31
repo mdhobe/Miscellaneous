@@ -106,4 +106,10 @@ Binary Search :-
   3. Search Single Element in a sorted array
   4. Search in Rotated Sorted Array
   5. Median of Two Sorted Arrays
+  6. K-th Element of two sorted arrays
+  7. Allocate Minimum Number of Pages
+  8. AGGRCOW - Aggressive cows
+  
+Heaps :-
+  1. 
 

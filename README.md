@@ -79,3 +79,31 @@ Questions :-
   
 Greedy Algo (Problems which either need minimum or maximum results from the set of feasible solutions to get only one optimal solution follows greedy approch ) :-
   1. N meetings in one room
+  2. Minimum number of platforms required for a railway
+  3. Job sequencing Problem
+  4. Fractional Knapsack Problem
+  5. Find minimum number of coins
+  6. Choose and Swap
+  7. Buy Maximum Stocks if i stocks can be bought on i-th day
+  8. Find the Minimum & Maximum amount to buy all N candies
+  9. Minimum Cost to cut a board into squares
+  10. Check if it is possible to survive on Island
+  11. Maximum product subset of an array
+  12. Maximize sum after K negations
+  13. Program for Shortest Job First (or SJF) CPU Scheduling (Non- preemptive)
+  14. Smallest subset with sum greater than all other elements
+  15. Defense of a Kingdom
+  16. DIEHARD -DIE HARD
+  17. GERGOVIA -Wine trading in Gergovia.java
+  18. Arranging Amplifiers
+  19. Minimum Cost of Ropes
+  20. Find smallest number with given number of digits and sum of digits
+  21. Find maximum sum possible equal sum of three stacks
+
+Binary Search :-
+  1. Nth Root of a Number using Binary Search
+  2. Median of Row Wise Sorted Matrix
+  3. Search Single Element in a sorted array
+  4. Search in Rotated Sorted Array
+  5. Median of Two Sorted Arrays
+

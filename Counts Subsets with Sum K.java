@@ -10,8 +10,11 @@ public class Solution {
     }
 
     public static int findWays(int current,int num[], int target, int[][] dp){
-        if(target == 0) return 1;
-        if(current == 0) return (num[current] == target) == true ? 1 : 0;
+        if(current == 0){
+            if(target == 0 && num[0] == 0) return 2;
+            if(target == 0 || target == num[0]) return 1;
+            return 0;
+        }
         if(dp[current][target] != -1) return dp[current][target];
 
         int pick = 0;
@@ -30,8 +33,14 @@ public class Solution {
         int[][] dp = new int[n][tar+1];
 
         //target = 0
-        for(int i=0;i<n;i++) dp[i][0] = 1;
-        if(num[0] <= tar) dp[0][num[0]] = 1;
+        for(int i=0;i<n;i++){
+            if(num[i] == 0) dp[i][0] = 2;
+            else dp[i][0] = 1;
+        }
+        if(num[0] <= tar){
+            if(num[0] == 0) dp[0][num[0]] = 2;
+            else dp[0][num[0]] = 1;
+        }
 
         //compute
         for(int i=1;i<n;i++){
@@ -57,7 +66,10 @@ public class Solution {
 
         //target = 0
         dp[0] = 1;
-        if(num[0] <= tar) dp[num[0]] = 1;
+        if(num[0] <= tar){
+            if(num[0] == 0)dp[num[0]] = 2;
+            else dp[num[0]] = 1;
+        }
 
         //compute
         for(int i=1;i<n;i++){

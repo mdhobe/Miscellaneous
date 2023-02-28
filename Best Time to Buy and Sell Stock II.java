@@ -25,3 +25,67 @@ class Solution {
         return dp[current][state] = profit;
     }
 }
+
+// Tabulation
+class Solution {
+    public int maxProfit(int[] prices) {
+        int n = prices.length;
+        int[][] dp = new int[n+1][2];
+        
+        // for n set 0
+        dp[n][0] = 0;
+        dp[n][1] = 0;
+
+        // compute
+        for(int day=n-1;day>=0;day--){
+            for(int state=0;state<2;state++){
+                int profit = 0;
+                if(state == 1){
+                    profit = Math.max(
+                        - prices[day] + dp[day+1][0],
+                        0 + dp[day+1][1]
+                    );
+                } else {
+                    profit = Math.max(
+                        prices[day] + dp[day+1][1],
+                        0 + dp[day+1][0]
+                    );
+                }
+                dp[day][state] = profit;
+            }
+        }
+
+        return dp[0][1];
+    }
+}
+
+// Space Optimization
+class Solution {
+    public int maxProfit(int[] prices) {
+        int n = prices.length;
+        int[] dp = new int[2];
+
+        // compute
+        for(int day=n-1;day>=0;day--){
+            int[] temp = new int[2];
+            for(int state=0;state<2;state++){
+                int profit = 0;
+                if(state == 1){
+                    profit = Math.max(
+                        - prices[day] + dp[0],
+                        0 + dp[1]
+                    );
+                } else {
+                    profit = Math.max(
+                        prices[day] + dp[1],
+                        0 + dp[0]
+                    );
+                }
+                temp[state] = profit;
+            }
+            for(int state=0;state<2;state++) dp[state] = temp[state];
+        }
+
+        return dp[1];
+    }
+}
